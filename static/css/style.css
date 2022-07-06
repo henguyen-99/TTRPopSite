@@ -9,3 +9,7 @@ body {
     background-size: cover;
     font-family: ImpressBT, sans-serif;
 }
+
+h1, h2, p {
+    text-align: center;
+}
