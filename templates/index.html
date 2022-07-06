@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="keywords" content="Toontown Rewritten, Population">
@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     </head>
     <body>
-        <h1>Toontown Rewritten Population Checker</h1>
+        <h1 id="header-title">Toontown Rewritten Population Checker</h1>
         <script src="{{ url_for('static', filename='js/pop.js') }}"></script>
+        <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
+        <p id="total-pop">{{ total_pop }}</p>
     </body>
 </html>
