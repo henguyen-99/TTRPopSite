@@ -8,4 +8,39 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: ImpressBT, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    height: auto;
+    overflow: auto;
+}
+
+
+
+.navbar li a {
+    display: block;
+    padding: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.navbar li a.activepage {
+    background-color: blue;
+    color: white;
+}
+
+.navbar li a:hover:not(.activepage) {
+    background-color: gray;
+    color: white;
+}
+
+h1, h2, p {
+    text-align: center;
 }

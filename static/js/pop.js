@@ -1,1 +1,1 @@
-alert("Hello there!");
+alert("Welcome to the TTR Population Checker!")
