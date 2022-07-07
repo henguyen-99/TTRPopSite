@@ -5,11 +5,21 @@
         <meta name="keywords" content="Toontown Rewritten, Population">
         <meta name="description" content="Toontown Rewritten Population Checker">
         <meta name="author" content="Henry Nguyen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="30">
         <title>TTR Population Checker</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     </head>
     <body>
+        <header id="navheader">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a class="activepage" href="/">Population Check</a></li>
+                </ul>
+            <nav>
+        </header>
         <h1 id="header-title">Toontown Rewritten Population Checker</h1>
         <script src="{{ url_for('static', filename='js/pop.js') }}"></script>
         <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
