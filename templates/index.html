@@ -12,17 +12,26 @@
     </head>
     <body>
         <header id="navheader">
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a class="activepage" href="/">Population Check</a></li>
-                </ul>
-            <nav>
+            <div id="header-container">
+                <div id="head-title">Toontown Rewritten Population Checker</div>
+                <div id="navigation" class="nav-container">
+                    <nav>
+                        <ul class="navbar">
+                            <a href="javascript:void(0);" id="icon" onclick="extendNav()">&#8801</a>
+                            <li><a href="#contact" class="navItem">Contact</a></li>
+                            <li><a href="#about" class="navItem">About</a></li>
+                            <li><a id="activepage" href="/" class="navItem">Population Check</a></li>
+                        </ul>
+                    <nav>
+                </div>
+            </div>
         </header>
-        <h1 id="header-title">Toontown Rewritten Population Checker</h1>
         <script src="{{ url_for('static', filename='js/pop.js') }}"></script>
-        <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
-        <p id="total-pop">{{ total_pop['totalPopulation'] }}</p>
+        <div id="body-container">
+            <div id="data-container">
+                <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
+                <p id="total-pop">{{ total_pop['totalPopulation'] }}</p>
+            </div>
+        </div>
     </body>
 </html>
