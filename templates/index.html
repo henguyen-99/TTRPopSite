@@ -9,6 +9,7 @@
         <meta http-equiv="refresh" content="30">
         <title>TTR Population Checker</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+        <script src="{{ url_for('static', filename='js/pop.js') }}" async></script>
     </head>
     <body>
         <header id="navheader">
@@ -26,12 +27,13 @@
                 </div>
             </div>
         </header>
-        <script src="{{ url_for('static', filename='js/pop.js') }}"></script>
-        <div id="body-container">
-            <div id="data-container">
-                <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
-                <p id="total-pop">{{ total_pop['totalPopulation'] }}</p>
+        <main>
+            <div id="body-container">
+                <div id="data-container">
+                    <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
+                    <h3 id="total-pop">{{ total_pop['totalPopulation'] }}</h3>
+                </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
