@@ -28,10 +28,31 @@
             </div>
         </header>
         <main>
-            <div id="body-container">
-                <div id="data-container">
+            <div id="total-container">
+                <div id="total-data-panel">
                     <h2 id="total-info">Toontown Rewritten's current total population is:</h2>
                     <h3 id="total-pop">{{ total_pop['totalPopulation'] }}</h3>
+                </div>
+            </div>
+            <div id="district-container">
+                <div id="district-data-panel">
+                    <h1>Population by Districts</h1>
+                    <table id="districtTable">
+                        <thead>
+                            <tr>
+                                <th>District</th>
+                                <th>Population</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for district in popByDistrict.keys() %}
+                            <tr>
+                                <td>{{ district }}</td>
+                                <td>{{ popByDistrict[district] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
