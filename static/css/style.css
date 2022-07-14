@@ -106,7 +106,7 @@ body {
 
 }
 
-#body-container {
+#total-container {
     background-image: url('../img/TTC.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ body {
     top: 50px;
 }
 
-#data-container {
+#total-data-panel {
     position: relative;
     background-color: white;
     margin: auto;
@@ -131,4 +131,28 @@ body {
 
 h1, h2, h3 {
     text-align: center;
+}
+
+#district-container {
+    position: relative;
+    background-color: rgb(59, 144, 255);
+    height: 70vh;
+}
+
+#district-data-panel {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    top: 30px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 rgba(128, 128, 128, 0.76);
+}
+
+#districtTable {
+    margin-left: auto;
+    margin-right: auto;
 }
